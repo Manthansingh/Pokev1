@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pokev1</string>
+    <string name="home_screen">WELCOME</string>
+    <string name="pokename">Enter the Pokemon Name</string>
+    <string name="poketype">Enter the pokemon type</string>
+    <string name="pokeid">Enter the pokemon id</string>
+    <string name="search">GO</string>
+    <string name="hpshow">HP</string>
+    <string name="cpshow">CP</string>
+    <string name="atkshow">ATK</string>
+    <string name="defshow">DEF</string>
+    <string name="stmshow">STM</string>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage3">
+
+    <TextView
+        android:id="@+id/iddisplay"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/basedisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/namedisplay"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/iddisplay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/typedisplay"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/basedisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/namedisplay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/basedisplay"
+        android:layout_width="202dp"
+        android:layout_height="192dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namedisplay" />
+
+    <TextView
+        android:id="@+id/statdisplay"
+        android:layout_width="0dp"
+        android:layout_height="168dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="180dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basedisplay" />
+
+    <TextView
+        android:id="@+id/cpdisplay"
+        android:textSize="22dp"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical"
+        android:text="@string/cpshow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hpdisplay"
+        android:textSize="22dp"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical"
+        android:text="@string/hpshow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cpdisplay" />
+
+    <TextView
+        android:id="@+id/attackdisplay"
+        android:textSize="22dp"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical"
+        android:text="@string/atkshow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hpdisplay" />
+
+    <TextView
+        android:id="@+id/defensedisplay"
+        android:textSize="22dp"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_horizontal|center"
+        android:text="@string/defshow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/attackdisplay" />
+
+    <TextView
+        android:id="@+id/staminadisplay"
+        android:textSize="22dp"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal|center"
+        android:text="@string/stmshow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/defensedisplay" />
+
+    <TextView
+        android:id="@+id/cp"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:text="@string/cpshow"
+        app:layout_constraintBottom_toTopOf="@+id/cpdisplay"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hp"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/hpshow"
+        app:layout_constraintBottom_toTopOf="@+id/hpdisplay"
+        app:layout_constraintStart_toEndOf="@+id/cp" />
+
+    <TextView
+        android:id="@+id/def"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_horizontal"
+        android:text="@string/defshow"
+        app:layout_constraintBottom_toTopOf="@+id/defensedisplay"
+        app:layout_constraintStart_toEndOf="@+id/atk" />
+
+    <TextView
+        android:id="@+id/stm"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/stmshow"
+        app:layout_constraintBottom_toTopOf="@+id/staminadisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/def" />
+
+    <TextView
+        android:id="@+id/atk"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_horizontal"
+        android:text="@string/atkshow"
+        app:layout_constraintBottom_toTopOf="@+id/attackdisplay"
+        app:layout_constraintStart_toEndOf="@+id/hp" />
+
+    <ImageView
+        android:id="@+id/imageviewer"
+        android:layout_width="170dp"
+        android:layout_height="192dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/statdisplay"
+        app:layout_constraintEnd_toStartOf="@+id/basedisplay"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iddisplay"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:color/background_light" />
+</android.support.constraint.ConstraintLayout>
